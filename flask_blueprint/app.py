@@ -17,8 +17,8 @@ def hello():
     return 'hello'
 
 
-from admin import admin_blue
-from user import user_blue
+from flask_blueprint.admin import admin_blue
+from flask_blueprint.user import user_blue
 
 # 注册blueprint
 app.register_blueprint(admin_blue)

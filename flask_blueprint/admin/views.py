@@ -7,10 +7,7 @@
 @Author  ：xuyj
 @Date    ：2024/2/5 10:28 
 """
-from flask import Blueprint
-
-# 第一个参数是Blueprint的名称，第二个参数是Blueprint所在的package的名称，通常都是__name__，第三个参数是路由前缀
-admin_blue = Blueprint(name='admin', import_name=__name__, url_prefix='/admin')
+from flask_blueprint.admin import admin_blue
 
 
 @admin_blue.route('/alluser')
