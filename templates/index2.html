@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--在页面展示data-->
+data:{{ data }}
+<br>
+<!--获取data里面某一个key的value的两种方式-->
+data['name']:{{data['name'] }}
+<br>
+data.name:{{data.name}}
+<br>
+列表:{{data.list}}
+<br>
+列表中索引为2的值：{{data.list[2]}}
+<br>
+列表中的值的sum = {{data.list[0]+data.list[1]+data.list[2]+data.list[3]}}
+<br>
+小写转大写：{{'hello' | upper}}
+</body>
+</html>
